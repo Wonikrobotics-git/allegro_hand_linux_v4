@@ -45,7 +45,6 @@ source install/setup.bash
 
 > If you have a left-hand model, change `HAND:=left`.
 
-
 To run the Allegro Hand, you need **two terminal windows**:
 - **Terminal 1**: Launches the hand controller.
   ```bash
@@ -56,6 +55,12 @@ To run the Allegro Hand, you need **two terminal windows**:
   ```bash
   ros2 run allegro_hand_keyboards allegro_hand_keyboard --ros-args -r /allegroHand/lib_cmd:=/allegroHand_0/lib_cmd
   ```
+
+**If you want to check the allegro hand model WITHOUT hardware,**
+
+```bash
+ros2 launch allegro_hand_controllers view_hand.launch.py hand_side:=right # (or left)
+```
 
 ✅ **Successful Launch**
 
