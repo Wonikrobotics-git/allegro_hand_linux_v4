@@ -21,7 +21,7 @@ def generate_launch_description():
         'share',
         'allegro_hand_description',
         'urdf',
-        'allegro_hand_right.urdf'
+        'allegro_hand_description_right.urdf'
     )
     left_urdf_path = os.path.join(
         SOURCE_DIR,
@@ -30,7 +30,7 @@ def generate_launch_description():
         'share',
         'allegro_hand_description',
         'urdf',
-        'allegro_hand_left.urdf'
+        'allegro_hand_description_left.urdf'
     )
 
     rviz_config_path = os.path.join(
