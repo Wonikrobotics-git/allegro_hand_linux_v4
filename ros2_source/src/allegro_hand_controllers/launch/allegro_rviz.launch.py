@@ -13,7 +13,6 @@ def generate_launch_description():
 
     # Command-line arguments
 
-    
     description_file = os.path.join(
         get_package_share_directory("allegro_hand_description"), "urdf", "allegro_hand_description_right.urdf"
     )
@@ -34,7 +33,7 @@ def generate_launch_description():
     )
     return LaunchDescription(
         [
-            
+
             rviz_node,
 
         ]

@@ -56,13 +56,79 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_link:
+          Value: true
+        if1:
+          Value: true
+        if2:
+          Value: true
+        if3:
+          Value: true
+        if4:
+          Value: true
+        if5:
+          Value: true
+        mf1:
+          Value: true
+        mf2:
+          Value: true
+        mf3:
+          Value: true
+        mf4:
+          Value: true
+        mf5:
+          Value: true
+        pf1:
+          Value: true
+        pf2:
+          Value: true
+        pf3:
+          Value: true
+        pf4:
+          Value: true
+        pf5:
+          Value: true
+        th1:
+          Value: true
+        th2:
+          Value: true
+        th3:
+          Value: true
+        th4:
+          Value: true
+        th5:
+          Value: true
       Marker Scale: 0.10000000149011612
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        {}
+        base_link:
+          if1:
+            if2:
+              if3:
+                if4:
+                  if5:
+                    {}
+          mf1:
+            mf2:
+              mf3:
+                mf4:
+                  mf5:
+                    {}
+          pf1:
+            pf2:
+              pf3:
+                pf4:
+                  pf5:
+                    {}
+          th1:
+            th2:
+              th3:
+                th4:
+                  th5:
+                    {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -83,6 +149,111 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        if5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mf5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pf1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pf2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pf3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pf4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pf5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        th5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Mass Properties:
         Inertia: false
         Mass: false
@@ -94,7 +265,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: palm_link
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -152,10 +323,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.15539813041687012
+      Pitch: 0.26039811968803406
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.8153983354568481
+      Yaw: 0.2853981554508209
     Saved: ~
 Window Geometry:
   Displays:

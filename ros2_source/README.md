@@ -48,7 +48,7 @@ source install/setup.bash
 To run the Allegro Hand, you need **two terminal windows**:
 - **Terminal 1**: Launches the hand controller.
   ```bash
-  ros2 launch allegro_hand_controllers allegro_hand.launch.py
+  ros2 launch allegro_hand_controllers allegro_hand.launch.py HAND:=right
   ```
 - **Terminal 2**: Starts the keyboard input interface.
   - remapping command: **`--ros-args -r /allegroHand/lib_cmd:=/allegroHand_0/lib_cmd `**
@@ -105,8 +105,16 @@ This section explains the **source code structure**, focusing on **launch files*
 
 This release introduces a **single** launch file, `allegro_hand.launch.py`, to start the hand.
 
+- RIGHT hand example:
+
 ```bash
-ros2 launch allegro_hand_controllers allegro_hand.launch.py
+ros2 launch allegro_hand_controllers allegro_hand.launch.py HAND:=right
+```
+
+- LEFT hand example:
+
+```bash
+ros2 launch allegro_hand_controllers allegro_hand.launch.py HAND:=left
 ```
 
 #### Optional (Recommended) Arguments:
@@ -120,7 +128,7 @@ ros2 launch allegro_hand_controllers allegro_hand.launch.py
 
 - To apply the PD controller, launch with the following command:
   ```bash
-  ros2 launch allegro_hand_controllers allegro_hand.launch.py CONTROLLER:="'pd'"
+  ros2 launch allegro_hand_controllers allegro_hand.launch.py CONTROLLER:=pd
   ```
 
 After launching the controller, start the keyboard input by running:

@@ -56,7 +56,7 @@ def generate_launch_description():
 
     declare_controller_arg = DeclareLaunchArgument(
         'CONTROLLER',
-        default_value="'grasp'",
+        default_value='grasp',
         description='Specify which controller to use: grasp, pd'
     )
 
@@ -114,7 +114,7 @@ def generate_launch_description():
             executable= executable_name,
             output='screen',
             parameters=[
-                {'hand_info/which_hand': LaunchConfiguration('HAND')},  # Pass HAND argument to parameter
+                {'~hand_info/which_hand': LaunchConfiguration('HAND')},  # Pass HAND argument to parameter
                 {'comm/CAN_CH': LaunchConfiguration('CAN_DEVICE')}
             ],
             arguments=[LaunchConfiguration('POLLING')],
@@ -131,9 +131,7 @@ def generate_launch_description():
             executable='robot_state_publisher',
             parameters=[{'robot_description': Command(['xacro ', urdf_path])}],
             remappings=[
-                # ('tf', PythonExpression(["'allegroHand_", LaunchConfiguration('NUM'), "/tf'"])),
                 ('joint_states', PythonExpression(["'allegroHand_", LaunchConfiguration('NUM'), "/joint_states'"])),
-                # ('robot_description', 'allegro_hand_description')
             ]
         ),
     ])
