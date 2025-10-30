@@ -104,6 +104,18 @@ This section provides instructions on setting up your PC and installing the PCAN
     ```bash
     sudo ./driver/pcan_make_devices 2
     ```
+- **CAN Setup:**
+  Before launching, ensure your CAN device is configured and active. The system is configured to use can0 at a bitrate of 1000000.
+
+   ```bash
+   sudo ip link set can0 down
+   sudo ip link set can0 type can bitrate 1000000
+   sudo ip link set can0 up
+   ```
+   > NOTE
+   > If you are using dual hands, you must also activate can1. This example maps the CAN devices as follows:
+   > - can0 : right hand
+   > - can1 : left hand
 
 - **(Optional) CAN Communication Tutorial**
   - If you are not familiar with PCAN, refer to the [CAN Communication Tutorial](https://www.allegrohand.com/ah-v4-can-communication).
@@ -148,6 +160,19 @@ This section provides instructions on setting up your PC and installing the PCAN
   ```bash
   sudo apt install can-utils
   ```
+
+- **CAN Setup:**
+  Before launching, ensure your CAN device is configured and active. The system is configured to use can0 at a bitrate of 1000000.
+
+   ```bash
+   sudo ip link set can0 down
+   sudo ip link set can0 type can bitrate 1000000
+   sudo ip link set can0 up
+   ```
+   > NOTE
+   > If you are using dual hands, you must also activate can1. This example maps the CAN devices as follows:
+   > - can0 : right hand
+   > - can1 : left hand
 
 </details>
 
