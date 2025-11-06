@@ -1,5 +1,9 @@
 <img align="right" width="20%" height="20%" src="./asset/allegrohand_v4.png">
 
+> [!WARNING]
+> # 📦 Repository Status: Archived
+> # This repository is no longer maintained. Please refer to the latest ROS 2 controller implementation at [Wonikrobotics-git/allegro_hand_ros2](https://github.com/Wonikrobotics-git/allegro_hand_ros2)
+
 # allegro_hand_linux_v4
 > Official Code Repository for controlling the Allegro Hand V4 on Linux System
 
